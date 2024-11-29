@@ -4,8 +4,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 function Projects() {
   return (
     <>
+      <a name='projects'><h4 className='h-projects'>Projects</h4> </a>
       <Container>
-        <a name='projects'> <h4 className='h-projects'>Projects</h4></a>
+        
         <Row>
           <Col sm={8} md={11}>
             <div>

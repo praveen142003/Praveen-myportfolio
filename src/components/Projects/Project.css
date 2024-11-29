@@ -1,9 +1,10 @@
 .h-projects{
     color: rgb(128, 238, 137);
-    position: relative;
-    right: 280px;
+    margin-right: 400px;
     padding-bottom: 15px;
-}
+} 
+
+
 .pro-crud{
    margin-left: 100px;
 }
