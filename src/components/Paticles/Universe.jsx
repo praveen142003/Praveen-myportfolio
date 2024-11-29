@@ -6,11 +6,11 @@ const BlackUniverse = () => {
 
   useEffect(() => {
     const universe = universeRef.current;
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 200; i++) {
       const star = document.createElement("div");
       star.className = "stars";
       star.style.top = `${Math.random() * 500}vh`;
-      star.style.left = `${Math.random() * 500}vw`;
+      star.style.left = `${Math.random() * 100}vw`;
       star.style.animationDelay = `${Math.random() * 5}s`;
       star.style.opacity = Math.random();
       universe.appendChild(star);
