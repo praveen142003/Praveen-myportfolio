@@ -16,7 +16,7 @@ function About() {
                             <strong style={{ color: "aqua" }}>  Praveenkumar </strong>
                         </b>
                     </Col>
-                </Row>
+                </Row><br/>
                 <Row>
                     <Col sm={12} md={9}>
                         <div style={{ paddingBottom: '15px', marginLeft: '70px' }}>

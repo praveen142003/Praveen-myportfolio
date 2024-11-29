@@ -1,15 +1,15 @@
 .h-projects{
     color: rgb(128, 238, 137);
     position: relative;
-    right: 200px;
+    right: 280px;
     padding-bottom: 15px;
 }
 .pro-crud{
-   margin-left: 90px;
+   margin-left: 100px;
 }
 .pro-employ{
-    margin-left: 70px;
+    margin-left: 80px;
 }
 .pro-login{
-   margin-left: 100px;
+   margin-left: 110px;
 }
