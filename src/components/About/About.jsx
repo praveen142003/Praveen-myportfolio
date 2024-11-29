@@ -8,7 +8,6 @@ function About() {
     return (
         <>
             <Container>
-
                 <a name='about' ><h4 className='h-about'>About Me</h4></a>
                 <Row>
                     <Col sm={12}>

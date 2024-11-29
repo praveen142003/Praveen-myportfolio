@@ -10,7 +10,7 @@ const BlackUniverse = () => {
       const star = document.createElement("div");
       star.className = "stars";
       star.style.top = `${Math.random() * 500}vh`;
-      star.style.left = `${Math.random() * 100}vw`;
+      star.style.left = `${Math.random() * 200}vw`;
       star.style.animationDelay = `${Math.random() * 5}s`;
       star.style.opacity = Math.random();
       universe.appendChild(star);
