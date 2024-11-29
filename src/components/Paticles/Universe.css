@@ -8,10 +8,8 @@ body {
 
 
 .universe {
-  
   background: black;
   z-index: -1;
-  
 }
 .content{
     position: relative;
