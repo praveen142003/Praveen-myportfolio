@@ -1,15 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  width:100%;
   overflow-x: hidden;
-  background: black;
+  /* background: black; */
 }
 
+
 .universe {
+  
   background: black;
   z-index: -1;
-  height: max-content;
- 
   
 }
 .content{

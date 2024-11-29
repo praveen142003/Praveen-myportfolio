@@ -21,6 +21,7 @@ nav a:hover{
  @media screen and (max-width:490px) {
     .navbar{
         width: 200px;
+        margin-top: 14px;
     }
     .navbar b{
         color: rgb(100, 100, 100);
