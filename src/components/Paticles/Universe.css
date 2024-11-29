@@ -3,14 +3,13 @@ body {
   padding: 0;
   overflow-x: hidden;
   background: black;
-  
 }
 
 .universe {
   background: black;
   z-index: -1;
   height: max-content;
-  
+ 
   
 }
 .content{
