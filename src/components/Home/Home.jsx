@@ -18,16 +18,25 @@ import BlackUniverse from '../Paticles/Universe';
 function Home() {
     return (
         <>
-            <nav>
-                <Navr />
-            </nav>
+          <Container fluid className='nav-content'>
+            <Container>
+                <Row>
+                    <Col xs={12}>
+                     <nav>
+                         <Navr />
+                       </nav>
+                    </Col>
+                </Row>
+            </Container>
+          </Container>
+           
             <section>
                 {/* <Container fluid className='home-section' id='home' > */}
-                <a name='home'></a>
-                <Container className='home-content'>
+                 <a name='home'></a> 
+                 <Container className='home-content'>
                   <BlackUniverse />
                     <Row>
-                        <Col md={7} className='home-header'>
+                        <Col sm={12} md={7} className='home-header'>
                             <h1 style={{ paddingBottom: '10px', paddingTop: "150px" }} className='heading'>
                                 Hi
                                 <span className='wave' role='img' aria-labelledby='wave'>
@@ -43,73 +52,73 @@ function Home() {
                             </div>
                         </Col>
 
-                        <Col md={5} style={{ paddingBottom: 0, paddingTop: "150px" }} >
+                        <Col sm={12} md={5} style={{ paddingBottom: 0, paddingTop: "150px" }} >
                             <img src={logo} className='img-fluids' style={{ maxHeight: "400px", borderRadius: "50%" }} />
                         </Col>
 
                     </Row>
-                </Container>
-                {/* </Container> */}
+                </Container> 
+                 {/* </Container>  */}
             </section>
             {/* --------------About---------- */}
 
-            <Container fluid className='about-section'>
+             <Container fluid className='about-section'>
                 <Container>
                     <Row style={{ padding: "10px" }}>
-                        <Col md={7} >
+                        <Col sm={12} md={7} >
                             <About />
                         </Col>
-                        <Col md={5} >
+                        <Col sm={12} md={5} >
                             <Designs />
                         </Col>
                     </Row>
                 </Container>
-            </Container>
+            </Container> 
 
             {/* -------------------Skills-------------- */}
-            <Container fluid className='skills-content'>
+             <Container fluid className='skills-content'>
                 <Container>
                     <Row style={{ padding: "10px" }}>
-                        <Col md={7}>
+                        <Col sm={12} md={7}>
                             <Skills />
                         </Col>
                     </Row>
-                </Container>
+                </Container> 
 
                 {/* ----------------Projects--------------- */}
-            </Container>
+             </Container>
             <Container fluid className='project-content'>
                 <Container>
                     <Row style={{ padding: "10px" }}>
-                        <Col md={7}>
+                        <Col sm={12} md={9}>
                             <Projects />
                         </Col>
                     </Row>
                 </Container>
-            </Container>
+            </Container> 
             {/* ---------------------Interests--------------- */}
             <Container fluid className='interest-content'>
                 <Container>
                     <Row style={{ padding: "10px" }}>
-                        <Col md={7}>
+                        <Col sm={12} md={7}>
                             <Interest />
                         </Col>
                     </Row>
                 </Container>
-            </Container>
+            </Container> 
 
             {/* ------------------Contact---------------- */}
             <footer>
                 <Container fluid className='contact-content'>
                     <Container>
                         <Row style={{ padding: "10px" }}>
-                            <Col md={12}>
+                            <Col sm={12} md={12}>
                                 <Contact />
                             </Col>
                         </Row>
                     </Container>
                 </Container>
-            </footer>
+            </footer> 
         </>
     )
 }

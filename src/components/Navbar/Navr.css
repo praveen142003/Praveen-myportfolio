@@ -2,17 +2,13 @@
     background-color: aqua;
     border-radius:5px 5px 0 0;
     
-   
 }
 
 nav a:hover{
-    
    font-weight: bold;
    transform-origin: 70% 70%;
    transform: translateY(2px);
    transition: all 0.3s ease-out 0s !important;
-   
-  
 }
 .navbar b:hover{
     color: black;
@@ -20,3 +16,13 @@ nav a:hover{
 .navbar b{
     color: rgb(100, 100, 100);
 }
+
+ @media screen and (max-width:490px) {
+    .navbar{
+        width: 200px;
+    }
+    .navbar b{
+        color: rgb(100, 100, 100);
+        margin-left: 30px;
+    }
+}  

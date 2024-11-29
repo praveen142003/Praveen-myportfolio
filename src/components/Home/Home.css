@@ -50,6 +50,7 @@
     margin: 0 auto; /* Center content */
     max-width: 100%;
     overflow-x: hidden;
+    
   }
   
   .heading {
@@ -142,3 +143,4 @@
     background-color: black;
     padding-top: 140px;
   }
+ 
