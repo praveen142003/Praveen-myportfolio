@@ -17,9 +17,9 @@ function Interest() {
                             <CardImg src={sportlogo} />
                             <CardImgOverlay>
                                 <CardBody>
-                                    <b style={{ color: 'whitesmoke', position: 'relative', top: '40px' }}>I enjoy playing cricket and chess, as they enhance my physical fitness and mental focus</b>
+                                    <b style={{ color: 'whitesmoke', position: 'relative', top: '30px' }}>I enjoy playing cricket and chess, as they enhance my physical fitness and mental focus</b>
                                     <br />
-                                    <b style={{ color: 'whitesmoke', position: 'relative', top: '140px' }}>I enjoy watching movies as a way to relax and explore different stories and perspectives</b>
+                                    <b style={{ color: 'whitesmoke', position: 'relative', top: '100px' }}>I enjoy watching movies as a way to relax and explore different stories and perspectives</b>
                                 </CardBody>
                             </CardImgOverlay>
                         </Card>
