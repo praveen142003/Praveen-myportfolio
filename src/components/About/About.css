@@ -1,0 +1,43 @@
+
+.h-about{
+    color: rgb(128, 238, 137);
+    position: relative;
+    right: 200px;
+    padding: 5px;
+    
+}
+b{
+    color: blanchedalmond;
+}
+
+button{
+   color: black;
+   padding: 5px ;
+   background: #4deeea;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 0 5px #4deeea;
+   transition: 0.5s;
+}
+button:hover {
+    box-shadow: 0 0 5px #4deeea , 0 0 25px #4deeea,
+    0 0 50px #4deeea,0 0 100px #4deeea;
+}
+.resume-div{
+    margin-top: 80px;
+    width:fit-content;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+  position: relative;
+  left: 250px;
+}
+
+.span-both{
+    position: relative;
+    right: 100px;
+}
+.degree{
+    position: relative;
+    right: 28px;
+}

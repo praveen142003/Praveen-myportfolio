@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+  /* background: black; */
+}
+
+.universe {
+  background: black;
+  z-index: -1;
+  height: max-content;
+  
+  
+}
+.content{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.stars {
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: twinkle 5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
