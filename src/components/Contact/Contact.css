@@ -1,13 +1,13 @@
 .h-contact{
     color: rgb(128, 238, 137);
     position: relative;
-    right: 400px;
+    right: 430px;
     padding-bottom: 15px;
 }
 @media screen and (max-width:490px) {
     .h-contact{
         position: relative;
-        right: 180px;
+        right: 200px;
     }
 }  
 
