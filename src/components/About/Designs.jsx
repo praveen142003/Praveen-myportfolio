@@ -9,7 +9,7 @@ function Designs() {
     <>
       <img src={reactLogo} className='logo react' alt='React -logo' />
       <img src={node} className='nodelogo' />
-      <div>
+     <div>
         <img src={boy} className='boylogo' />
       </div>
     </>

@@ -4,9 +4,10 @@ import { Col, Container, Row } from 'react-bootstrap'
 function Projects() {
   return (
     <>
-      <a name='projects'><h4 className='h-projects'>Projects</h4> </a>
+      
+      <a name='projects'></a>
+      <h4 className='h-projects'>Projects</h4> 
       <Container>
-        
         <Row>
           <Col sm={8} md={11}>
             <div>
@@ -24,7 +25,7 @@ function Projects() {
                 by using React and Mock API</b>
             </div>
           </Col>
-        </Row><br/>
+        </Row><br />
         <Row>
           <Col sm={8} md={11}>
             <div>
@@ -32,13 +33,9 @@ function Projects() {
                 <strong style={{ color: 'aqua' }}> Valid Login Page </strong>
                 by using html, css, javascript, jquery and bootstrap</b>
             </div>
-
           </Col>
         </Row>
-
-
       </Container>
-
     </>
   )
 }

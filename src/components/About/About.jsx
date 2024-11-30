@@ -3,7 +3,7 @@ import "./About.css"
 import { FcGraduationCap } from "react-icons/fc";
 import { FaReact } from "react-icons/fa";
 import TypeWriter from 'typewriter-effect'
-import { Container , Row,Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 function About() {
     return (
         <>
@@ -15,7 +15,7 @@ function About() {
                             <strong style={{ color: "aqua" }}>  Praveenkumar </strong>
                         </b>
                     </Col>
-                </Row><br/>
+                </Row><br />
                 <Row>
                     <Col sm={12} md={9}>
                         <div style={{ paddingBottom: '15px', marginLeft: '70px' }}>
@@ -37,9 +37,6 @@ function About() {
             <div className='resume-div'>
                 <a href='https://drive.google.com/file/d/1dDUAFq1mx5OWssAxOfQ28U08sxOCHesZ/view?usp=drivesdk' download> <button>Resume</button></a>
             </div>
-
-
-
         </>
     )
 }
