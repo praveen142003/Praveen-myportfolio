@@ -12,7 +12,7 @@ function Navr() {
                         <Nav.Link href='#home' ><b>Home</b></Nav.Link>
                         <Nav.Link href='#about'><b>About Me</b></Nav.Link>
                         <Nav.Link href='#projects'><b>Projects</b></Nav.Link>
-                        <Nav.Link href='#contact'><b>Contact</b></Nav.Link>
+                        <Nav.Link href='#contact' style={{paddingRight:'1px'}}><b>Contact</b></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

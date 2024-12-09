@@ -20,7 +20,8 @@ nav a:hover{
 
  @media screen and (max-width:490px) {
     .navbar{
-        width: 500px;
+        width:11%;
+        border-radius: 100%;
         
     }z
     .navbar b{
