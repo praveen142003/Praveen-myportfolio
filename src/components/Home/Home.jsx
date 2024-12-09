@@ -12,10 +12,14 @@ import Interest from '../Interests/Interest';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 import BlackUniverse from '../Paticles/Universe';
-
-
+import {motion} from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
 
 function Home() {
+    const {ref , inView} = useInView({
+        triggerOnce : true,
+        threshold :0.2
+    })
     return (
         <>
           <Container fluid className='nav-content'>
@@ -35,28 +39,41 @@ function Home() {
                  <a name='home'></a> 
                  <Container className='home-content'>
                   <BlackUniverse />
-                    <Row>
-                        <Col sm={12} md={7} className='home-header'>
-                            <h1 style={{ paddingBottom: '10px', paddingTop: "150px" }} className='heading'>
+                  <div >
+                  <Row>
+                        <Col  sm={12} md={7}  className='home-header'>
+
+                            <motion.h1 
+                            ref={ref}
+                            initial={{opacity:0 ,y:100}}
+                            animate={inView ? {opacity:1 , y:0} : {}}
+                            transition={{delay:0.2 , duration:0.5}} style={{ paddingBottom: '10px', paddingTop: "150px" }}
+                             className='heading'>
                                 Hi
                                 <span className='wave' role='img' aria-labelledby='wave'>
                                     👋🏻
                                 </span>
-                            </h1>
-                            <h1 className='heading-name'>
+                            </motion.h1>
+                            <motion.h1  ref={ref}
+                            initial={{opacity:0 ,y:100}}
+                            animate={inView ? {opacity:1 , y:0} : {}}
+                            transition={{delay:0.4 , duration:0.5}} className='heading-name'>
                                 I'M
                                 <strong className='main-name'> Praveenkumar</strong>
-                            </h1>
+                            </motion.h1>
                             <div style={{ padding: '40px', textAlign: "left" }}>
                                 <Changer />
                             </div>
                         </Col>
 
-                        <Col sm={12} md={5} style={{ paddingBottom: 0, paddingTop: "150px" }} >
-                            <img src={logo} className='img-fluids' style={{ maxHeight: "400px", borderRadius: "50%" }} />
+                        <Col sm={12} md={5}  style={{ paddingBottom: 0, paddingTop: "150px" }} >
+                            <motion.img initial={{opacity:0 , scale:0}}
+                            animate={{opacity:1 , scale :1}} transition={{delay:0.5,duration:0.5}} src={logo} className='img-fluids' style={{ maxHeight: "400px", borderRadius: "50%" }} />
                         </Col>
 
                     </Row>
+                  </div>
+                   
                 </Container> 
                  {/* </Container>  */}
             </section>

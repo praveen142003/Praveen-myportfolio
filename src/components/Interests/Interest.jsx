@@ -2,8 +2,14 @@ import React from 'react'
 import './Interest.css'
 import { Card, CardBody, CardImg, CardImgOverlay, Row, Col, Container } from 'react-bootstrap'
 import sportlogo from '../../images/sportslap2.jpg'
+import {motion} from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 function Interest() {
+    const {ref , inView} = useInView({
+        triggerOnce : true ,
+        threshold : 0.3
+      })
     return (
         <>
             <h4 className='h-interest'>Areas of Interest</h4>
@@ -13,9 +19,9 @@ function Interest() {
             <Container>
                 <Row>
                     <Col sm={12}>
-                        <Card style={{ padding: '3px', marginLeft: '100px' }}>
+                        <Card  style={{ padding: '3px', marginLeft: '100px' }}>
                             <CardImg src={sportlogo} />
-                            <CardImgOverlay>
+                            <CardImgOverlay >
                                 <CardBody>
                                     <b style={{ color: 'whitesmoke', position: 'relative', top: '30px' }}>I enjoy playing cricket and chess, as they enhance my physical fitness and mental focus</b>
                                     <br />
