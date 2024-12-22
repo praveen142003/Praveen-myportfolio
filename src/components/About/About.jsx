@@ -13,7 +13,7 @@ function About() {
     })
     return (
         <>
-            <Container >
+            <Container className='mb-5'>
                 <a name='about' ></a>
                 <Row>
                    <Col className='d-flex justify-content-start'>

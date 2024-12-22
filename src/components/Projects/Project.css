@@ -2,19 +2,3 @@
     color: rgb(128, 238, 137);
   
 } 
-@media screen and (max-width:490px) {
-    .h-projects{
-       position: relative;
-       left: 90px;
-    }
-}  
-
-/* .pro-crud{
-   margin-left: 100px;
-}
-.pro-employ{
-    margin-left: 80px;
-}
-.pro-login{
-   margin-left: 110px;
-} */

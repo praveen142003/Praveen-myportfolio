@@ -81,7 +81,7 @@ function Home() {
 
             <Container fluid className='about-section'>
                 <Container>
-                    <Row >
+                    <Row className='mb-5' >
                         <Col sm={12} md={8}>
                             <About />
                         </Col>

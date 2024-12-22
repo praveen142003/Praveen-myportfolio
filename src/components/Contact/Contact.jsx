@@ -14,7 +14,7 @@ function Contact() {
   return (
     <>
     <a name='contact'> </a>
-    <Container>
+    <Container className='mt-5'>
       <Row>
         <Col className='d-flex justify-content-start'>   
            <h4 className='h-contact'>Contact</h4>

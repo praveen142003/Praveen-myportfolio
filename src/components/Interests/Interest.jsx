@@ -4,7 +4,7 @@ import { Card, CardBody, CardImg, CardImgOverlay, Row, Col, Container, Carousel 
 import cricket from '../../images/cricket.jpg'
 import chess from '../../images/chess-board-dark3.webp'
 import movie from '../../images/movies.jpg'
-import { motion } from 'framer-motion'
+import { color, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 function Interest() {
@@ -44,19 +44,19 @@ function Interest() {
                             <Carousel.Item>
                                 <img src={chess} width='80%' />
                                 <Carousel.Caption>
-                                    <b>I enjoy playing chess, as they enhance my focus</b>
+                                    <b className='int_b'>I enjoy playing chess, as they enhance my focus</b>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img src={cricket} width='80%' />
                                 <Carousel.Caption>
-                                    <b>I enjoy playing cricket, as they enhance my physical fitness</b>
+                                    <b className='int_b'>I enjoy playing cricket, as they enhance my physical fitness</b>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img src={movie} width='80%' />
                                 <Carousel.Caption>
-                                    <b>I enjoy watching movies as a way to relax and explore different stories and perspectives</b>
+                                    <b className='int_b'>I enjoy watching movies as a way to relax and explore different stories and perspectives</b>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
