@@ -5,10 +5,7 @@ import './Navr.css'
 function Navr() {
     return (
         <>
-         <Container>
-            <Row>
-                <Col>
-                <Navbar className='navbar' fixed='top' expand='sm'>
+            <Navbar className='navbar' fixed='top' expand='sm'>
                 <Navbar.Toggle arid-controls='my-nav' style={{ marginLeft: "15px", fontSize: "10px" }} />
                 <Navbar.Collapse id='my-nav' >
                     <Nav>
@@ -19,10 +16,6 @@ function Navr() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-                </Col>
-            </Row>
-         </Container>
-           
         </>
     )
 }
