@@ -12,130 +12,130 @@ import Interest from '../Interests/Interest';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 import BlackUniverse from '../Paticles/Universe';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 
 function Home() {
-    const {ref , inView} = useInView({
-        triggerOnce : true,
-        threshold :0.2
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.2
     })
     return (
         <>
-          <Container fluid className='nav-content'>
-            <Container>
-                <Row>
-                    <Col xs={12}>
-                     <nav>
-                         <Navr />
-                       </nav>
-                    </Col>
-                </Row>
+            <Container fluid className='nav-content'>
+                <Container>
+                    <Row>
+                        <Col>
+                            <nav>
+                                <Navr /> 
+                            </nav>
+                        </Col>
+                    </Row>
+                </Container>
             </Container>
-          </Container>
-           
+
             <section>
                 {/* <Container fluid className='home-section' id='home' > */}
-                 <a name='home'></a> 
-                 <Container className='home-content'>
-                  <BlackUniverse />
-                  <div >
-                  <Row>
-                        <Col  sm={12} md={7}  className='home-header'>
+                <a name='home'></a>
+                <Container className='home-content'>
+                    <BlackUniverse />
+                    <div >
+                        <Row>
+                            <Col sm={12} md={7} className='home-header'>
 
-                            <motion.h1 
-                            ref={ref}
-                            initial={{opacity:0 ,y:100}}
-                            animate={inView ? {opacity:1 , y:0} : {}}
-                            transition={{delay:0.2 , duration:0.5}} style={{ paddingBottom: '10px', paddingTop: "150px" }}
-                             className='heading'>
-                                Hi
-                                <span className='wave' role='img' aria-labelledby='wave'>
-                                    👋🏻
-                                </span>
-                            </motion.h1>
-                            <motion.h1  ref={ref}
-                            initial={{opacity:0 ,y:100}}
-                            animate={inView ? {opacity:1 , y:0} : {}}
-                            transition={{delay:0.4 , duration:0.5}} className='heading-name'>
-                                I'M
-                                <strong className='main-name'> Praveenkumar</strong>
-                            </motion.h1>
-                            <div style={{ padding: '40px', textAlign: "left" }}>
-                                <Changer />
-                            </div>
-                        </Col>
+                                <motion.h1
+                                    ref={ref}
+                                    initial={{ opacity: 0, y: 100 }}
+                                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                                    transition={{ delay: 0.2, duration: 0.5 }} style={{ paddingBottom: '10px', paddingTop: "150px" }}
+                                    className='heading'>
+                                    Hi
+                                    <span className='wave' role='img' aria-labelledby='wave'>
+                                        👋🏻
+                                    </span>
+                                </motion.h1>
+                                <motion.h1 ref={ref}
+                                    initial={{ opacity: 0, y: 100 }}
+                                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                                    transition={{ delay: 0.4, duration: 0.5 }} className='heading-name'>
+                                    I'M
+                                    <strong className='main-name'> Praveenkumar</strong>
+                                </motion.h1>
+                                <div style={{ padding: '40px', textAlign: "left" }}>
+                                    <Changer />
+                                </div>
+                            </Col>
 
-                        <Col sm={12} md={5}  style={{ paddingBottom: 0, paddingTop: "150px" }} >
-                            <motion.img initial={{opacity:0 , scale:0}}
-                            animate={{opacity:1 , scale :1}} transition={{delay:0.5,duration:0.5}} src={logo} className='img-fluids' style={{ maxHeight: "400px", borderRadius: "50%" }} />
-                        </Col>
+                            <Col sm={12} md={5} style={{ paddingBottom: 0, paddingTop: "150px" }} >
+                                <motion.img initial={{ opacity: 0, scale: 0 }}
+                                    animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.5, duration: 0.5 }} src={logo} className='img-fluids' style={{ maxHeight: "400px", borderRadius: "50%" }} />
+                            </Col>
 
-                    </Row>
-                  </div>
-                   
-                </Container> 
-                 {/* </Container>  */}
+                        </Row>
+                    </div>
+
+                </Container>
+                {/* </Container>  */}
             </section>
             {/* --------------About---------- */}
 
-             <Container fluid className='about-section'>
+            <Container fluid className='about-section'>
                 <Container>
-                    <Row style={{ padding: "10px" }}>
-                        <Col sm={12} md={7} >
+                    <Row >
+                        <Col sm={12} md={8}>
                             <About />
                         </Col>
-                        <Col sm={12} md={5} >
+                        <Col sm={12} md={4}>
                             <Designs />
                         </Col>
                     </Row>
                 </Container>
-            </Container> 
+            </Container>
 
             {/* -------------------Skills-------------- */}
-             <Container fluid className='skills-content'>
+            <Container fluid className='skills-content'>
                 <Container>
-                    <Row style={{ padding: "10px" }}>
+                    <Row >
                         <Col sm={12} md={7}>
                             <Skills />
                         </Col>
                     </Row>
-                </Container> 
+                </Container>
 
                 {/* ----------------Projects--------------- */}
-             </Container>
+            </Container>
             <Container fluid className='project-content'>
                 <Container>
-                    <Row style={{ padding: "10px" }}>
+                    <Row >
                         <Col sm={12} md={9}>
                             <Projects />
                         </Col>
                     </Row>
                 </Container>
-            </Container> 
+            </Container>
             {/* ---------------------Interests--------------- */}
             <Container fluid className='interest-content'>
                 <Container>
-                    <Row style={{ padding: "10px" }}>
-                        <Col sm={12} md={7}>
+                    <Row>
+                        <Col sm={12} md={12} lg={7}>
                             <Interest />
                         </Col>
                     </Row>
                 </Container>
-            </Container> 
+            </Container>
 
             {/* ------------------Contact---------------- */}
             <footer>
                 <Container fluid className='contact-content'>
                     <Container>
-                        <Row style={{ padding: "10px" }}>
-                            <Col sm={12} md={12}>
+                        <Row>
+                            <Col sm={12}>
                                 <Contact />
                             </Col>
                         </Row>
                     </Container>
                 </Container>
-            </footer> 
+            </footer>
         </>
     )
 }
